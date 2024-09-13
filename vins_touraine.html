@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 	<head>
-		<meta charset="utf-8" >
-		<meta title="Les vins de Touraine">
+		<meta charset="utf-8">
+		<title>="Les vins de Touraine"</title>
+		<meta name="description" content="Site sur les vins de Touraine">
+		<meta name="keywords" content="Vin, Touraine, Chinon, Bourgeuil, Vouvray" >
+		<link rel="stylesheet" type="text/css" href="style.css" >
 	</head>
 	<body>
 		<header>
 			<h1>
 				- Les grands vins de Touraine -
 			</h1>
+			
 			<blockquote>
+				<p>
 				- Qu'est-ce que vous regardez ? C'est la carte routière ? <br> - Non ! C'est la carte des vins. C'est pour éviter les bouchons ! - <br><del>Fernand Reynaud</del><ins>Raymond Devos</ins>
+				</p>
 			</blockquote>
 			<h2> 
 				Localisation des vins de Touraine
 			</h2>
 			<figure>
-				<img src="images/cartetouraine.jpg" alt="cartetouraine" title="cartetouraine" usemap="#Vin-Bourgeuil">>
-				<map name="Vin-Bourgeuil">
-					<area target="Bourgeuil" alt="" title="" href="#bourgueil" coords="211,56,251,55,250,79,227,79,227,90,211,88" shape="poly">
+				<img src="images/cartes/cartetouraine.jpg" alt="carte de la touraine" width="472" height="188" usemap="#Vin-Touraine">>
+				<map name="Vin-Touraine">
+					<area target="Chinon" alt="" title="" href="#chinon" coords="229,84,269,102" shape="rect">
+					<area target="Bourgeuil" alt="" title="" href="#bourgueil" coords="213,58,250,56,249,77,229,76,224,88,211,88" shape="poly">
+					<area target="Vouvray" alt="" title="" href="#vouvray" coords="287,58,18" shape="circle">
 				</map>
 				<figcaption>Cartes des vins de Touraine</figcaption>
 			</figure>
@@ -57,27 +65,23 @@
 					Bourgueil
 				</h3>
 				<p>
-					<em>Friand et plaisant ou structuré et puissant</em>: deux personnalités de Bourgueil pour<br>exprimer dans votre verre ses deux grands terroirs. Rabelais disait à son sujet, dans <br> Gargantua, Beuvez tousjours, vous ne mourrez jamais
+					<em>Friand et plaisant ou structuré et puissant</em>: deux personnalités de Bourgueil pour<br>exprimer dans votre verre ses deux grands terroirs. Rabelais disait à son sujet, dans <br><cite> Gargantua</cite>, <q>Beuvez tousjours, vous ne mourrez jamais</q>
 				</p>
 				<h4>
 					Localisation :
 				</h4>
 				<p>
-					L'aire d'appellation s'étend sur 7 communes. A cet endroit, la vallée de la Loire est <br> composée de sols variés, depuis les alluvions près du fleuve jusqu'aux sols argilo-<br>calcaires proches de la côte de tuffeau.
+					L'aire d'appellation s'étend sur 7 communes. A cet endroit, la vallée de la Loire est <br> composée de sols variés, depuis les alluvions près du fleuve jusqu'aux sols argilo-<br>calcaires proches de la côte de <a href="#tuffeau">tuffeau</a>.
 				</p>
-				<figure>
-					<img src="images/cartebourgueil.jpg">
-					<figcaption>
-						<h4>Superficie : 1 400 ha</h4>
-					</figcaption>
-				</figure>
+				<img src="images/cartes/cartebourgueil.jpg" alt="cartesBourgeuil">
+					<h4>Superficie : 1 400 ha</h4>
 			</article>
 			<article>
 				<h3 id="chinon">
 					Chinon
 				</h3>
 				<p>
-					<em>Capitale de la Rabelaisie et du tourisme Bachique</em>, Chinon fête ses grands vins rouges<br> tout en faisant tinter ses verres de rosé et de blanc.
+					<em>Capitale de la Rabelaisie et du tourisme <a href="#bachique">Bachique</a></em>, Chinon fête ses grands vins rouges<br> tout en faisant tinter ses verres de rosé et de blanc.
 				</p>
 				<h4>
 					Localisation :
@@ -85,12 +89,8 @@
 				<p>
 					L'aire d'appellation s'étend sur 19 communes, de part et d'autre de la Vienne jusqu'à sa confluence avec la Loire.
 				</p>
-				<figure>
-					<img src="images/cartechinon.jpg">
-					<figcaption>
-						<h4>Superficie : 2 300 ha</h4>
-					</figcaption>
-				</figure>
+				<img src="images/cartes/cartechinon.jpg" alt="cartesChinon">
+					<h4>Superficie : 2 300 ha</h4>
 			</article>
 			<article>
 				<h3 id="vouvray">
@@ -105,35 +105,28 @@
 				<p>
 					L'aire d'appellation s'ouvre aux limites Est de l'agglomération tourangelle et s'étend sur 7 communes de la rive droite de la Loire et en bordure de son affluent, la Brenne.
 				</p>
-				<figure>
-					<img src="images/cartevouvray.jpg">
-					<figcaption>
-						<h4>Superficie : 2 000 ha</h4>
-					</figcaption>
-				</figure>
+				<img src="images/cartes/cartevouvray.jpg" alt="cartesVouvray">
+					<h4>Superficie : 2 000 ha</h4>
 			</article>
 			<aside>
 				<h2>
 					Glossaire	
 				</h2>
-				<ul>
-					<li>
+				<dl>
+					<dt id="bachique">
 						Bachique
-						<ul>
-							<li>
-								Relatif à Bacchus
-							</li>
-						</ul>
-					</li>
-					<li>
+						<dd>
+							Relatif à Bacchus
+						</dd>
+					</dt>
+				
+					<dt id="tuffeau">
 						Tuffeau
-						<ul>
-							<li>
-								Roche calcaire poreuse
-							</li>
-						</ul>
-					</li>
-				</ul>
+						<dd>
+							Roche calcaire poreuse
+						</dd>
+					</dt>
+				</dl>
 			</aside>
 			<aside>
 				<h2>
@@ -143,56 +136,61 @@
 					<caption>
 						Millésimes des vins de Touraine
 					</caption>
+					<thead aria-colspan="5" role="cell">
 					<tr>
-						<th>
-
+						<th colspan="5">
+							Année
 						</th>
-						<th>
-							2012
-						</th>
-						<th>
-							2013
-						</th>
-						<th>
-							2014
-						</th>
-						<th>
-							2015
-						</th>
+					</tr>
+					</thead>
+					<tr>
+						<th>2012</th>
+						<th>2013</th>
+						<th>2014</th>
+						<th>2015</th>
 					</tr>
 					<tr>
 						<th>
 							Rouge
 						</th>
-						<th>
+						<td>
 							15
-						</th>
-						<th>
+						</td>
+						<td>
 							18
-						</th>
-						<th>
+						</td>
+						<td>
 							14
-						</th>
-						<th>
+						</td>
+						<td>
 							17
-						</th>
+						</td>
 					</tr>
 					<tr>
 						<th>
 							Blanc
 						</th>
-						<th>
+						<td>
 							12
-						</th>
-						<th>
+						</td>
+						<td>
 							17
-						</th>
-						<th>
+						</td>
+						<td>
 							15
-						</th>
-						<th>
+						</td>
+						<td>
 							15
-						</th>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Qualité
+						</td>
+						<td><img src="images/Star.png" alt="Etoiles" width="15" height="15"></td>
+						<td><img src="images/Star.png" alt="Etoiles" width="15" height="15"><img src="images/Star.png" alt="Etoiles" width="15" height="15"><img src="images/Star.png" alt="Etoiles" width="15" height="15"></td>
+						<td><img src="images/Star.png" alt="Etoiles" width="15" height="15"><img src="images/Star.png" alt="Etoiles" width="15" height="15"></td>
+						<td><img src="images/Star.png" alt="Etoiles" width="15" height="15"><img src="images/Star.png" alt="Etoiles" width="15" height="15"></td>
 					</tr>
 				</table>
 			</aside>
@@ -206,13 +204,13 @@
 				Liens
 			</h2>
 			<nav>
-				Les vins du Pays Nantais - Les vins d'Anjou-Saumur - Les vins du Centre
+				<a href="">Les vins du Pays Nantais </a> - <a href="vin_anjou_saumur.html">Les vins d'Anjou-Saumur</a> - <a href="">Les vins du Centre</a>
 			</nav>	
 			<p>
 				Page réalisée par les étudiants de DU Groupe 1 2 le 1er septembre 2018
 			</p>
-			Pour contacter le webmaster :
-			<a href="james.bond@scotl-yard.uk">james.bond@scotl-yard.uk</a>
+			<p>Pour contacter le webmaster : </p>
+			<address><a href="james.bond@scotl-yard.uk">james.bond@scotl-yard.uk</a></address><br>
 			Page sponsorisée par <a href="https://u.gg/">Les vins Nicolas</a>
 		</footer>
 	                        
