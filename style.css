@@ -1,5 +1,14 @@
 /* Styles CSS - Vins de Loire */
 
+h1 {color: brown; text-align: center; background-image: url("images/feuille_vigne.png");}
+body {background-color: orange;}
+#firstp {background-color: orange; text-align: center; color: white}
+header {background-color: white;}
+main {background-color: white;}
+footer {background-color: white;}
+p {color: orange; text-align: center;}
+h2 {background-color: brown; color: orange; text-align: center;}
+
 /* Définition du corps de la page */
 /* police Trebuchet MS, arial ou sans-serif */
 /* couleur du texte : d2691e */
