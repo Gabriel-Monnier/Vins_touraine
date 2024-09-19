@@ -303,3 +303,7 @@ th {
 }
 /* police de couleur a52a2a */
 /* couleur de fond ccc */
+
+figcaption {
+    text-align: center;
+}
