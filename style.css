@@ -8,6 +8,7 @@ body {
     background-repeat: no-repeat;
     font-family: sans-serif;
     background-position: bottom right;
+    background-attachment: fixed;
 }
 /* police Trebuchet MS, arial ou sans-serif */
 /* couleur du texte : d2691e */
@@ -73,25 +74,25 @@ h2 {
 
 
 /* Définition titres de niveau 3 et 4 et les termes définis dans le glossaire */
-h3, h4 {
+h3, h4, dt {
     color: #a52a2a;
 }
 /* police de couleur a52a2a */
-
-
 
 /* Définition titre de niveau 3 */
 h3 {
     font-style: italic;
     text-align: center;
-    border: #a52a2a double 3px;
+    border-width: 3px;
+    border-color: #a52a2a;
+    border-style: double;
     background-image: url("images/mini_bouteille.png");
     background-repeat: no-repeat;
     background-position: left;
     width: 600px;
     height: 40px;
-    margin: 20 auto;
-    padding: 12px 0 0;
+    margin: 20px auto;
+    padding: 12px 0 0 0;
 }
 /* style italique */
 /* alignement centré */
@@ -106,13 +107,14 @@ h3 {
 	
 
 /* Définition titre de niveau 4 et les termes définis dans le glossaire */
-h4 {
+h4, dt {
     border-left-style: solid;
     border-left-width: 4px;
     border-bottom-style: solid ;
     border-bottom-width: 2px;
     margin-top: 20px;
     margin-right: 70% ;
+    text-indent: 20px;
 }
 /* décalage du texte de 20 pixels */
 /* bordure gauche style solid, épaisseur de 4 pixels */
@@ -141,8 +143,8 @@ blockquote {
     color: white;
     background-color: #d2691e;
     text-align: center;
-    margin: 2 180;
-    padding: 2 40;
+    margin: 2px 180px;
+    padding: 2px 40px;
     border-left: white 6px;
     border-right: white 6px;
 }
@@ -159,7 +161,8 @@ blockquote {
 /* Définition liste non ordonnée */
 ul {
     list-style-image: url("images/puce_grappe.png") ;
-    text-transform: capitalize lowercase;
+    list-style-position: inside;
+    text-transform: capitalize ;
 }
 /* liste à puce avec aspect disque ou puce_grappe positionnée à l'intérieur */
 /* lettres en petites capitales */
@@ -167,8 +170,10 @@ ul {
 
 
 /* Définition sous liste non ordonnée */
-ol {
-    list-style-type: square; 
+li > ol {
+    list-style-type: square;
+    list-style-image: none;
+    font-variant: normal;
 }
 /* liste à puce avec aspect carré, sans image et à l'intérieur */
 /* lettres sans petites capitales */
@@ -194,7 +199,10 @@ li > a {
 
 
 /* Définition paragraphe "appellation" */
-
+h3 + p{
+    text-align: center;
+    font-size: 0.9em;
+}
 /* texte centré */
 /* taille de la police 0,9 em */
 
@@ -225,7 +233,7 @@ h4 + p {
 
 
 /* Définition première lettre des termes du glossaire */
-dt ::first-letter {
+dt::first-letter {
     font-size: 1.5em;
 }
 /* police 1,5 em */
@@ -233,7 +241,7 @@ dt ::first-letter {
 
 
 /* Définition liens survolés ou actifs et nom de fleuve mis en valeur */
-a:hover, a:active {
+a:hover, a:active, p > span{
     color: white;
     background-color: #a52a2a;
 }
@@ -243,7 +251,7 @@ a:hover, a:active {
 
 
 /* Définition images et videos */
-img, video {
+p + img,figure > img, video {
     display: block;
     margin: 0 auto;
     border: 1px inset #a52a2a;
@@ -260,7 +268,7 @@ img, video {
 
 
 /* Définition légendes et paragraphe de navigation */
-nav {
+footer > nav {
     text-align: center;
 }
 /* texte centré */
@@ -270,7 +278,7 @@ nav {
 /* Définition tableau */
 table {
     width: 80%;
-    margin: 20 auto;
+    margin: 20px auto;
     empty-cells: hide;
     border-collapse: separate;
 }
@@ -282,7 +290,7 @@ table {
 
 
 /* Définition cellules */
-td {
+td, th{
     border: 1px solid #a52a2a ;
     text-align: center;
 }
@@ -303,6 +311,19 @@ th {
 }
 /* police de couleur a52a2a */
 /* couleur de fond ccc */
+
+footer > p {
+    text-align: right;
+    color: red;
+}
+
+#firstp {
+    font-weight: bold;
+}
+
+address {
+    text-align: right;
+}
 
 figcaption {
     text-align: center;
